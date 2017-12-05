@@ -27,6 +27,8 @@ class vault::install {
       }
     }
 
+    'none': {}
+
     default: {
       fail("Installation method ${::vault::install_method} not supported")
     }

@@ -63,7 +63,7 @@ class vault (
   $download_url        = $::vault::params::download_url,
   $service_name        = $::vault::params::service_name,
   $service_provider    = $::vault::params::service_provider,
-  $manage_service     = $::vault::params::manage_service,
+  $manage_service      = $::vault::params::manage_service,
   $backend             = $::vault::params::backend,
   $manage_backend_dir  = $::vault::params::manage_backend_dir,
   $listener            = $::vault::params::listener,
