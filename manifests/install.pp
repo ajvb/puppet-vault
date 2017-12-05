@@ -34,10 +34,12 @@ class vault::install {
     }
   }
 
-  file { $vault_bin:
-    owner => 'root',
-    group => 'root',
-    mode  => '0555',
+  if $::vault::install_method != 'none' {
+    file { $vault_bin:
+      owner => 'root',
+      group => 'root',
+      mode  => '0555',
+    }
   }
 
   if !$::vault::disable_mlock {
